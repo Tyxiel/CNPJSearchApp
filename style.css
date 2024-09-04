@@ -1,0 +1,204 @@
+:root {
+  --color-background: #edf2fa;
+  --color-primary: #d7e3fc;
+  --color-secondary: #ccdbfd;
+  --color-tertiary: #c1d3fe;
+  --color-highlight: #abc4ff;
+  --color-highlight-dark: #8a9bff;
+  --color-highlight-darker: #5f6eff;
+  --color-highlight-near-black: #3b4a8faf;
+  --color-highlight-near-near-black: #2e3b7f;
+  --text-color: #212529;
+  --border-color: #aab6d6;
+  --link-bg-hover: #a1b4f7;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  background-color: var(--color-background);
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color);
+  height: 100vh;
+  width: 100vw;
+}
+
+.vr {
+  display: flex;
+  width: 1px;
+  height: 10px;
+  border-right: 1px solid var(--color-highlight-near-near-black);
+  margin: 0 2rem;
+  place-self: center;
+}
+
+header {
+  margin: 0 auto;
+  align-self: center;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  min-height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--color-primary);
+  box-shadow: 0 12px var(--color-highlight-near-near-black);
+}
+
+#nav-bar a:not(#logo-link) {
+  padding: 0.5rem 1rem;
+  border: 0.2rem solid var(--color-highlight-near-near-black);
+  border-radius: 0.8rem;
+  transition: background-color 0.3s, border-color 0.3s;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#nav-bar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-highlight-near-near-black);
+  font-size: 1.8rem;
+}
+
+#nav-bar i {
+  font-size: 3rem;
+}
+
+#nav-bar p {
+  margin: 0;
+  text-align: center;
+}
+
+#header-img {
+  object-fit: contain;
+  width: 6rem;
+}
+
+#logo-link {
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.nav-link {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#nav-bar a:hover:not(#logo-link) {
+  background-color: var(--link-bg-hover);
+}
+
+#main-title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 100px auto 2rem auto;
+  color: var(--color-highlight-near-near-black);
+}
+
+.form-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 10px 0 15px 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form #number {
+  width: 30%;
+  min-height: 30px;
+  padding: 5px 10px;
+  border-radius: 0.8rem;
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  border: 2px solid var(--color-highlight-near-near-black);
+  background-color: var(--color-secondary);
+}
+
+form #number::placeholder {
+  color: #212529;
+}
+
+.form-description {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 5px 0 100px 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section {
+  display: flex;
+  width: 50vw;
+  background-color: var(--color-secondary);
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  border: 2px solid var(--color-highlight-near-near-black);
+  border-radius: 0.8rem;
+  flex-direction: column;
+  box-shadow: 20px 12px var(--color-highlight-near-near-black);
+}
+
+section h2 {
+  color: var(--color-highlight-near-near-black);
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  background-color:var(--color-primary);
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+}
+
+.info-section h3 {
+  font-size: 1.6rem;
+  place-self: center;
+  color: var(--color-highlight-near-black);
+}
+
+.info-section p {
+  display: flex;
+  place-self: center;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  word-spacing: 0.3rem;
+  color: var(--color-highlight-dark);
+}
