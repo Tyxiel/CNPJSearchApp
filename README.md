@@ -37,3 +37,7 @@ O CNPJ Finder é uma ferramenta desenvolvida para facilitar a busca por dados ca
 4.  Digite um número de CNPJ válido (apenas números) no campo indicado e aguarde o carregamento das informações.
 
 Ou acesse a demonstração online: [CNPJ Search App](https://tyxiel.github.io/CNPJSearchApp/)
+
+## Licença
+
+Este projeto é licenciado sob a **GNU Affero General Public License v3.0**.
